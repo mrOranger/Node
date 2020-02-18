@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right, #3fd68d, #3ac7c7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main-container{
+    width: 50%;
+    text-align: center;
+    margin-top: 200px;
+    background-image: linear-gradient(to right, aliceblue, gainsboro);
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+
+#table-container {
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+
+tr[priority="1"]:hover{
+    background-color: rgba(255, 86, 86, 0.521);
+}
+
+tr[priority="2"]:hover{
+    background-color: rgba(96, 96, 243, 0.719);
+}
+
+tr[priority="3"]:hover{
+    background-color: rgba(54, 255, 54, 0.63);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    min-width: 400px;
+    background-image: linear-gradient(to right, aliceblue, gainsboro);
+    border-radius: 20px;
+    outline: none;
+}
+
+tr{
+    
+    height: 40px;
+}
+
+th {
+    padding: 30px;    
+}
+
+td {
+    padding: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.container > h1 {
+    padding: 10px;
+}
+
+.name-container, .date-container, .priority-container, .description-container, .button-container{
+    padding: 10px;
+}
+
+input[type="radio"]{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="date"]{
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    border: 0px;
+    background: none;
+    border: 2px solid dimgrey;
+    text-align: center;
+    color: black;
+    outline: none;
+    transition: 0.70s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
+    background-color: #a9abfc;
+    color: white;
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0px;
+    background: none;
+    border: 2px solid dimgrey;
+    text-align: center;
+    color: black;
+    outline: none;
+    transition: 0.70s;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border-width: 0px;
+    outline: none;
+    background-color: #a9abfc;
+    color: white;
+    transition: 0.70s;
+}
+
+button:hover {
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #7c7e99;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }

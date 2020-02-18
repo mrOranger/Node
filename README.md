@@ -1,2 +1,2 @@
-#TODO APPLICATION WITH NODE.JS AND EXPRESS
+# TODO APPLICATION WITH NODE.JS AND EXPRESS
 Simple TODO app to show the framework Node.js. The application works using the __Express__ middleware to manage the HTTP protocol. The HTML pages are generate dynamically using the Embdedded JavaScript pages. All the application is based on the Architectural Design Pattern **Model-View-Controller** and the Database has been developed using MySQL DBMS. Other's dependencies are: **Path** to manage the directory path and **Body Parser** to manage the body of HTTP Requestes.
